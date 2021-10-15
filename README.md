@@ -30,6 +30,9 @@
 
 ## About The Project
 
+![Hacktoberfest Issues Search](https://user-images.githubusercontent.com/3246481/137557660-77729286-d013-409c-b19d-5e9289b73f0b.png)
+
+
 Web app can be used to find all the open issues for Hacktoberfest.
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
