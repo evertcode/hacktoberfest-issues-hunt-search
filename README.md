@@ -1,29 +1,67 @@
-# Next.js + Tailwind CSS Example
+<div align="center">
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+  ### <img src="https://raw.githubusercontent.com/evertcode/hacktoberfest-issues-hunt-search/main/public/favicon.ico" height="30px"/> [Hacktoberfest Issues Search](https://hacktoberfest-issues.vercel.app)
+  
+  ***Hacktoberfest Issue Search***
+</div>
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+<div align="center">
 
-## Preview
+![](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
+![](https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<!-- TABLE OF CONTENTS -->
 
-## Deploy your own
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## About The Project
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Web app can be used to find all the open issues for Hacktoberfest.
 
-## How to use
+<p align="right"><a href="#top">Back to top 🔼</a></p>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Getting Started
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Install the dependencies:
+
+```sh
+$ npm install
+// or
+$ yarn
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Run in dev mode:
+
+```sh
+$ npm run dev
+// or
+$ yarn dev
+```
+
+### Built With
+
+- JavaScript
+- [Next JS](https://nextjs.org)
+- [TailwindCSS](https://tailwindcss.com)
+
+<p align="right"><a href="#top">Back to top 🔼</a></p>
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right"><a href="#top">Back to top 🔼</a></p>
