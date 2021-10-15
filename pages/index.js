@@ -78,7 +78,7 @@ export default function Home ({ data }) {
         <h1 className='font-extrabold text-3xl text-vermilion-500'>Hacktoberfest Issues Search</h1>
 
         <div className='flex space-x-4 pt-10'>
-          <input {...language} className='w-full rounded p-2' placeholder='Lenguage' />
+          <input {...language} className='w-full rounded p-2' placeholder='Language' />
           <input {...labels} className='w-full rounded p-2' placeholder='Labels' />
           <button onClick={handleSearch} className='flex bg-vermilion-500 px-4 py-2 text-white hover:bg-vermilion-400'>
             Search
