@@ -11,8 +11,20 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@badrap/bar-of-progress": "0.1.2",
     "autoprefixer": "^10.2.6",
+    "hacktoberfest-issue-hunt": "2.0.3",
     "postcss": "^8.3.5",
+    "react-table": "7.7.0",
+    "standard": "16.0.4",
     "tailwindcss": "^2.2.4"
+  },
+  "eslintConfig": {
+    "globals": {
+      "fetch": false
+    },
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }

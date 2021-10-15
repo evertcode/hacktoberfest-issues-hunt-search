@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+:root {
+  --app-background-color: #e4eae3;
+  --app-background: radial-gradient(#ffb191 1px, transparent 0),
+    radial-gradient(#ffb191 1px, #e4eae3 0);
+  --text-base-color: #2b3531;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--app-background-color);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  color: var(--text-base-color);
+  font-weight: 400;
+}
