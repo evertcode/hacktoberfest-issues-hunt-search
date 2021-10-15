@@ -59,6 +59,7 @@ $ yarn dev
 - JavaScript
 - [Next JS](https://nextjs.org)
 - [TailwindCSS](https://tailwindcss.com)
+- [Hacktoberfest-Issue-Hunt](https://www.npmjs.com/package/hacktoberfest-issue-hunt)
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
 
