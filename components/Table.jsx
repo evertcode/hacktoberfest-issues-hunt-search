@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { useTable, usePagination } from 'react-table'
+import { useTable, usePagination, useSortBy } from 'react-table'
 import Pagination from './Pagination'
 
 function Table ({ columns, data }) {
@@ -29,8 +29,21 @@ function Table ({ columns, data }) {
       columns,
       data: dataTable
     },
+    useSortBy,
     usePagination
   )
+
+  const IconSort = ({ column }) => {
+    const desc = column.isSortedDesc ? ' ▼' : ' ▲'
+
+    return (
+      <span>
+        {
+          column.isSorted ? desc : ''
+        }
+      </span>
+    )
+  }
 
   return (
     <>
@@ -45,9 +58,10 @@ function Table ({ columns, data }) {
                 <th
                   className='px-4 py-3 title-font tracking-wider font-medium text-envy-900 text-sm bg-sandal-100'
                   key={index}
-                  {...column.getHeaderProps()}
+                  {...column.getHeaderProps(column.getSortByToggleProps())}
                 >
                   {column.render('Header')}
+                  <IconSort column={column} />
                 </th>
               ))}
             </tr>
