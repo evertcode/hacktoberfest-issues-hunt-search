@@ -30,6 +30,8 @@
 
 ## About The Project
 
+![Hacktoberfest Issues Search](https://user-images.githubusercontent.com/3246481/137557978-cfc62c2b-18cf-4ce2-950a-b97d922520aa.png)
+
 Web app can be used to find all the open issues for Hacktoberfest.
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
@@ -57,6 +59,7 @@ $ yarn dev
 - JavaScript
 - [Next JS](https://nextjs.org)
 - [TailwindCSS](https://tailwindcss.com)
+- [Hacktoberfest-Issue-Hunt](https://www.npmjs.com/package/hacktoberfest-issue-hunt)
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
 
