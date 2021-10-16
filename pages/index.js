@@ -17,11 +17,18 @@ export default function Home ({ data }) {
   const colums = useMemo(() => [
     {
       Header: 'Title',
-      accessor: 'title'
-    },
-    {
-      Header: 'Link',
-      accessor: 'link'
+      accessor: 'title',
+      Cell: ({ row }) => (
+        <a
+          href={row.original.link}
+          title={row.values.title}
+          className='text-blue-400'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {row.values.title}
+        </a>
+      )
     },
     {
       Header: 'Labels',
