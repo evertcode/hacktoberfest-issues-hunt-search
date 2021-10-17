@@ -1,5 +1,32 @@
 {
+  "name": "hacktoberfest-issue-search",
+  "version": "1.0.0",
+  "description": "Webapp that provides information about the open issues for Hacktoberfest",
   "private": true,
+  "keywords": [
+    "Hacktoberfest",
+    "Issues",
+    "Hunt",
+    "Search",
+    "WebApp",
+    "JavaScript",
+    "React",
+    "NextJS",
+    "Tailwind"
+  ],
+  "author": {
+    "name": "Hebert Hernandez",
+    "url": "https://github.com/evertcode"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evertcode/hacktoberfest-issues-hunt-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evertcode/hacktoberfest-issues-hunt-search/issues"
+  },
+  "homepage": "https://github.com/evertcode/hacktoberfest-issues-hunt-search#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
