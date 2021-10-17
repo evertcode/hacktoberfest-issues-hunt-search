@@ -81,10 +81,10 @@ export default function Home ({ data }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='flex flex-col w-full flex-1 px-20 text-center'>
-        <h1 className='font-extrabold text-3xl text-vermilion-500'>Hacktoberfest Issues Search</h1>
+      <main className='flex flex-col w-full flex-1 py-2 px-2 md:px-10 overflow-x-hidden md:overflow-auto text-center'>
+        <h1 className='font-extrabold text-3xl px-8 md:px-0 text-vermilion-500'>Hacktoberfest Issues Search</h1>
 
-        <div className='flex space-x-4 pt-10'>
+        <div className='flex md:space-x-4 pt-10 px-8 md:px-0 flex-col md:flex-row gap-2'>
           <input {...language} className='w-full rounded p-2' placeholder='Language' />
           <input {...labels} className='w-full rounded p-2' placeholder='Labels' />
           <button onClick={handleSearch} className='flex bg-vermilion-500 px-4 py-2 text-white hover:bg-vermilion-400'>
