@@ -127,12 +127,12 @@ function Table ({ columns, data }) {
                   if (cell.column.id === 'state') {
                     return (
                       <td
-                      className='px-4 py-3 hidden md:block'
-                      key={index}
-                      {...cell.getCellProps()}
-                    >
-                      {cell.render('Cell')}
-                    </td>
+                        className='px-4 py-3 hidden md:block'
+                        key={index}
+                        {...cell.getCellProps()}
+                      >
+                        {cell.render('Cell')}
+                      </td>
                     )
                   }
 

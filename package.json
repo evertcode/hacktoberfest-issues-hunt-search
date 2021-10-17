@@ -30,7 +30,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --cache --fix"
   },
   "dependencies": {
     "next": "latest",
@@ -44,7 +46,8 @@
     "postcss": "^8.3.5",
     "react-table": "7.7.0",
     "standard": "16.0.4",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "@next/eslint-plugin-next": "^11.1.2"
   },
   "eslintConfig": {
     "globals": {

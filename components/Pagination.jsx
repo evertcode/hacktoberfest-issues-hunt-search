@@ -5,7 +5,7 @@ import ChevronDoubleRight from './Icons/ChevronDoubleRight'
 import ChevronLeft from './Icons/ChevronLeft'
 import ChevronDoubleLeft from './Icons/ChevronDoubleLeft'
 
-function Pagination({
+function Pagination ({
   setPageSize,
   gotoPage,
   previousPage,
