@@ -56,7 +56,7 @@ function Table ({ columns, data }) {
             <tr key={ig} {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column, index) => (
                 <th
-                  className='px-4 py-3 title-font tracking-wider font-medium text-envy-900 text-sm bg-sandal-100'
+                  className='px-4 py-3 title-font tracking-wider font-medium text-envy-900 text-sm bg-sandal-100 last:hidden md:last:block'
                   key={index}
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                 >
@@ -100,7 +100,7 @@ function Table ({ columns, data }) {
                   if (cell.column.id === 'comments') {
                     return (
                       <td
-                        className='px-4 py-3 text-gray-600 text-right'
+                        className='px-4 py-3 text-gray-600 text-left'
                         key={index}
                         {...cell.getCellProps()}
                       >
@@ -120,6 +120,18 @@ function Table ({ columns, data }) {
                             {item}
                           </span>
                         ))}
+                      </td>
+                    )
+                  }
+
+                  if (cell.column.id === 'state') {
+                    return (
+                      <td
+                        className='px-4 py-3 hidden md:block'
+                        key={index}
+                        {...cell.getCellProps()}
+                      >
+                        {cell.render('Cell')}
                       </td>
                     )
                   }

@@ -19,19 +19,21 @@ function Pagination ({
 }) {
   return (
     <>
-      <div className='flex justify-center items-center space-x-4 py-2'>
-        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-          <ChevronDoubleLeft />
-        </button>{' '}
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-          <ChevronLeft />
-        </button>{' '}
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
-          <ChevronRight />
-        </button>{' '}
-        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-          <ChevronDoubleRight />
-        </button>{' '}
+      <div className='flex justify-center items-center space-x-4 py-2 flex-col md:flex-row gap-2 md:gap-0'>
+        <div className='flex justify-center'>
+          <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+            <ChevronDoubleLeft />
+          </button>{' '}
+          <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+            <ChevronLeft />
+          </button>{' '}
+          <button onClick={() => nextPage()} disabled={!canNextPage}>
+            <ChevronRight />
+          </button>{' '}
+          <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+            <ChevronDoubleRight />
+          </button>{' '}
+        </div>
         <span>
           Page{' '}
           <strong>
