@@ -14,16 +14,22 @@ Don't forget to **give the project a star ⭐!** Thanks again!
 git clone https://github.com/@username/hacktoberfest-issues-hunt-search
 ```
 
-3. Create your Feature Branch
+3. Move to `hacktoberfest-issues-hunt-search` directory
+
+```bash
+cd hacktoberfest-issues-hunt-search
+```
+
+4. Create your Feature Branch
 
 ```bash
 git checkout -b feature/AmazingFeature
 ```
 
-4. Push to the Branch
+5. Push to the Branch
 
 ```bash
 git push origin feature/AmazingFeature
 ```
 
-5. Open a Pull Request
+6. Open a Pull Request
