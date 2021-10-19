@@ -87,7 +87,7 @@ export default function Home ({ data }) {
         <div className='flex md:space-x-4 pt-10 px-8 md:px-0 flex-col md:flex-row gap-2'>
           <input {...language} className='w-full rounded p-2' placeholder='Language' />
           <input {...labels} className='w-full rounded p-2' placeholder='Labels' />
-          <button onClick={handleSearch} className='flex bg-vermilion-500 px-4 py-2 text-white hover:bg-vermilion-400'>
+          <button onClick={handleSearch} className='flex items-center justify-center rounded-lg md:rounded-none bg-vermilion-500 px-4 py-2 text-white hover:bg-vermilion-400'>
             Search
           </button>
         </div>
