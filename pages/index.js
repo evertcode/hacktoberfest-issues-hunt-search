@@ -16,6 +16,25 @@ export default function Home ({ data }) {
   const [issues, setIssues] = useState([])
   const colums = useMemo(() => [
     {
+      Header: 'Repo',
+      accessor: 'repo',
+      Cell: ({ row }) => {
+        const [, , , , reponame] = row.original.link.split('/')
+
+        return (
+          <a
+            href={row.original.link}
+            title={row.values.title}
+            className='text-blue-400'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {reponame}
+          </a>
+        )
+      }
+    },
+    {
       Header: 'Title',
       accessor: 'title',
       Cell: ({ row }) => (
