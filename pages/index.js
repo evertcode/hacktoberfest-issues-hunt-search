@@ -114,6 +114,11 @@ export default function Home ({ data }) {
         <div className='flex flex-col w-full pt-10 space-y-4'>
           {issues.length ? <Table columns={colums} data={issues} /> : <Table columns={colums} data={data} />}
         </div>
+        <footer className='flex justify-end items-center w-full px-4 py-2'>
+          <p className='text-center text-gray-500'>
+            Made with <span className='text-red-500'>❤</span> by <a href='http://github.com/evertcode' className='text-blue-500 hover:text-blue-400' target='_blank' rel='noopener noreferrer'>evertcode</a>.
+          </p>
+        </footer>
       </main>
     </div>
   )
