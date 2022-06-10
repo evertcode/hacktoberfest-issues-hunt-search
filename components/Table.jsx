@@ -112,14 +112,16 @@ function Table ({ columns, data }) {
                   if (cell.column.id === 'labels') {
                     return (
                       <td key={index} className='text-justify'>
-                        {cell.value.map((item) => (
-                          <span
-                            key={item}
-                            className='text-green-600 bg-green-200 text-xs font-thin inline-block py-1 px-2 rounded-full last:mr-0 mr-1'
-                          >
-                            {item}
-                          </span>
-                        ))}
+                        {cell.value
+                          ? cell.value.map((item) => (
+                            <span
+                              key={item}
+                              className='text-green-600 bg-green-200 text-xs font-thin inline-block py-1 px-2 rounded-full last:mr-0 mr-1'
+                            >
+                              {item}
+                            </span>
+                            ))
+                          : ''}
                       </td>
                     )
                   }
